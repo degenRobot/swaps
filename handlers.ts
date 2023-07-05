@@ -20,8 +20,8 @@ export const onSwapCamelot: EventHandlerFor<typeof camelotLP, 'Swap'> = async (
     to,
     amount0In : formatUnits(amount0In, TOKEN_0_DECIMALS),
     amount0Out : formatUnits(amount0Out, TOKEN_0_DECIMALS),
-    formatUnits(amount1In, TOKEN_1_DECIMALS),
-    formatUnits(amount1Out,TOKEN_1_DECIMALS),  
+    amount1In : formatUnits(amount1In, TOKEN_1_DECIMALS),
+    amount1Out : formatUnits(amount1Out,TOKEN_1_DECIMALS),  
 
   })
   record.save()
