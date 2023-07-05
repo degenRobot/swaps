@@ -1,15 +1,6 @@
 import { createEntity } from 'https://deno.land/x/robo_arkiver@v0.4.15/mod.ts'
 
-// @note: "Index: true" enhances graphql queries
-export const swapUniV3 = createEntity('swapUniV3', {
-  block: { type: Number, index: true },
-  from: String,
-  to: String,
-  amount0: Number,
-  amount1: Number,
-})
-
-export const swapCamelotEnt = createEntity('swapCamelot', {
+export const camelotSwaps = createEntity('camelotSwaps', {
   block: { type: Number, index: true },
   from: String,
   to: String,
@@ -18,3 +9,16 @@ export const swapCamelotEnt = createEntity('swapCamelot', {
   amount1In: Number,
   amount1Out: Number,
 })
+
+
+// @note: "Index: true" enhances graphql queries
+/*
+export const swapUniV3 = createEntity('swapUniV3', {
+  block: { type: Number, index: true },
+  from: String,
+  to: String,
+  amount0: Number,
+  amount1: Number,
+})
+*/
+
